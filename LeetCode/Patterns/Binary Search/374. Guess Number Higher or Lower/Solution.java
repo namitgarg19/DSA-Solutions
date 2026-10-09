@@ -13,7 +13,7 @@ public class Solution extends GuessGame {
         for(int i=1;i<=n;i++){
             int mid=l+(r-l)/2;
             if(guess(mid)==0){
-                t=mid;
+                retumid;
             }else if(guess(mid)==-1){
                 r=mid-1;
             }else{
