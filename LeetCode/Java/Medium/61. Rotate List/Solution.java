@@ -22,6 +22,9 @@ class Solution {
             dummy = dummy.next;
         }
         k = k % length;
+        if (k == 0) {
+    return head;
+}
         for(int i=0;i<k;i++){
             fast=fast.next;
         }
