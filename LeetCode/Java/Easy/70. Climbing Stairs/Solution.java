@@ -1,15 +1,9 @@
 class Solution {
     public int climbStairs(int n) {
-        int a = 1, b = 2;
-        if (n == 1) return a;
-        if (n == 2) return b;
-        int c = 0;
-        for (int i = 3; i <= n; i++) {
-            c = a + b;
-            a = b;
-            b = c;
+        if(n==1 || n==2){
+            return n;
         }
-        
-        return c;
+
+        return climbStairs(n-1)+climbStairs(n-2);
     }
 }
